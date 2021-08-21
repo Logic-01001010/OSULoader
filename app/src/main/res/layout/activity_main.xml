@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#F2F2F2">
+
+
+        <TextView
+            android:id="@+id/text_oszFiles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20px"
+            android:gravity="left"
+            android:text="Empty"
+            android:textColor="@color/black"
+            android:textIsSelectable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_weight="2.5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_count"
+            android:layout_margin="7px"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0개"
+            android:textColor="@color/black"
+            android:background="#EEEEEE"
+            android:textSize="100px"
+        ></TextView>
+
+        <Button
+            android:layout_margin="5px"
+            android:id="@+id/btn_research"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:text="새로고침"
+            android:background="#E86AA2"
+            android:textSize="60px">
+
+        </Button>
+
+        <Button
+            android:layout_margin="5px"
+            android:id="@+id/btn_load"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:text="로드하기"
+            android:background="#E488A1"
+            android:textSize="60px"
+            android:textStyle="bold">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
